@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Test Task</title>
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="product">
+		<h1>For gamers by gamers TEE</h1>
+		<img class="product__image" src="images/product.jpg" alt="">
+		<div class="product__info">
+			<div class="product__info__id">Item #: 701642853695</div>
+			<div class="product__price">
+				$<span class="product__price_old">29.50</span>
+				<span class="product__price_new">$19.99</span>
+			</div>
+			<div class="product__info__rating">
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+				<i class="fa fa-star"></i>
+			</div>
+			<div class="product__info__share">
+				<input type="checkbox" id="share">
+				<label for="share">Share it!</label>
+				<div class="socials">
+					<span>Share with<i class="fa fa-times"></i></span>
+					<a href="#" class="socials__facebook"></a>
+					<a href="#" class="socials__twitter"></a>
+					<a href="#" class="socials__pinterest"></a>
+					<a href="#" class="socials__youtube"></a>
+					<a href="#" class="socials__instagram"></a>
+				</div>
+			</div>
+			<p class="product__info__description">
+				<span>Details:</span>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+				ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+				velit esse cillum dolore eu fugiat nulla pariatur. </p>
+			<form class="product__info__size" action="#">
+				<span>Select a size:</span>
+				<input type="radio" name="size" id="XS">
+				<label for="XS">XS</label>
+				<input type="radio" name="size" id="S">
+				<label for="S">S</label>
+				<input type="radio" name="size" id="M">
+				<label for="M">M</label>
+				<input type="radio" name="size" id="L">
+				<label for="L">L</label>
+				<input type="submit" value="ADD TO CART">
+			</form>
+		</div>
+	</div>
+	<div class="other">
+		<div class="other__title">You may also like</div>
+		<div class="other__products">
+			<button class="other__products-controls" id="previous"></button>
+			<button class="other__products-controls" id="next"></button>
+			<ul class="list">
+				<li class="list__item showing">
+					<a href="#"></a>
+					<div class="prices">
+						<span class="prices_old">$29.99</span>
+						<span class="prices_new">$19.99</span>
+					</div>
+				</li>
+				<li class="list__item">
+					<a href="#"></a>
+					<div class="prices">
+						<span>$22.00</span>
+					</div>
+				</li>
+				<li class="list__item">
+					<a href="#"></a>
+					<div class="prices">
+						<span>$24.99</span>
+					</div>
+				</li>
+				<li class="list__item">
+					<a href="#"></a>
+					<div class="prices">
+						<span class="prices_old">$29.99</span>
+						<span class="prices_new">$19.99</span>
+					</div>
+				</li>
+				<li class="list__item">
+					<a href="#"></a>
+					<div class="prices">
+						<span>$60.00</span>
+					</div>
+				</li>
+				<li class="list__item">
+					<a href="#"></a>
+					<div class="prices">
+						<span>$54.00</span>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
