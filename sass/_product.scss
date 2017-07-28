@@ -1,0 +1,184 @@
+.product {
+	@include clearfix;
+	&__image {
+		width: 45%;
+		margin-right: 2%;
+		float: left;
+		height: auto;
+	}
+	&__price {
+		font-size: 36px;
+		font-weight: bold;
+		&_old {
+			text-decoration: line-through;
+			margin-right: 10px;
+		}
+		&_new {
+			color: $pink;
+		}
+	}
+	&__info {
+		float: left;
+		max-width: 43%;
+		&__id {
+			color: $lightgrey;
+			font-size: 11px;
+			letter-spacing: .05em;
+		}
+
+		&__rating {
+			display: inline-block;
+			i {
+				color: $lightgrey;
+				&:not(:last-child) {
+					color: $pink;
+				}
+			}
+		}
+		&__share {
+			display: inline-block;
+			position: relative;
+			font-weight: bold;
+			font-size: 0;
+			color: $blue;
+			input[type="checkbox"] {
+				display: none;
+				&:checked ~ .socials {
+					display: block;
+				}
+			}
+			label {
+				margin-left: 10px;
+				font-size: 18px;
+				cursor: pointer;
+			}
+			.socials {
+				display: none;
+				min-width: 285px;
+				margin-top: 10px;
+				position: absolute;
+				background-color: white;
+				box-shadow: 0 0 5px rgba(black, .75);
+				transition: visibility 0s .5s, opacity .5s;
+				padding: 15px;
+				left: -125%;
+				span {
+					font-size: 18px;
+					display: block;
+					margin-bottom: 15px;
+					i {
+						cursor: pointer;
+						float: right;
+						margin-top: 5px;
+					}
+				}
+				&::before, &::after {
+					width: 12px;
+					height: 12px;
+					content: " ";
+					display: block;
+					position: absolute;
+					bottom: 100%;
+					left: calc(50% - 8px);
+					background-color: inherit;
+					transform: rotate(45deg);
+					top: -6px;
+				}
+				&::before {
+					box-shadow: 0 0 5px rgba(black, .75);
+					z-index: -100;
+				}
+				&::after {
+					z-index: 10;
+				}
+				a {
+					display: inline-block;
+					width: 41px;
+					height: 41px;
+					font-size: 14px;
+					background-image: url('../images/social-icons.png');
+					background-repeat: no-repeat;
+					&:not(:last-child) {
+						margin-right: 15px;
+					}
+				}
+				&__facebook {
+					background-position: -5px -5px;
+				}
+				&__twitter {
+					background-position: -56px -56px;
+				}
+				&__pinterest {
+					background-position: -5px -56px;
+				}
+				&__instagram {
+					background-position: -56px -5px;
+				}
+				&__youtube {
+					background-position: -107px -5px;
+				}
+			}
+
+		}
+		&__description {
+			font-size: 12px;
+			margin: 20px 0 0;
+			span {
+				display: block;
+				@include title;
+				font-size: 14px;
+				letter-spacing: .025em;
+				margin-bottom: 5px;
+			}
+		}
+		&__size {
+			font-size: 0;
+			margin-top: 25px;
+			span {
+				font-size: 14px;
+				@include title;
+				letter-spacing: .05em;
+				line-height: 42px;
+				margin-right: 10px;
+			}
+			input[type="radio"] {
+				display: none;
+				&:checked + label {
+					color: white;
+					background-color: $darkgrey;
+				}
+			}
+			label {
+				cursor: pointer;
+				text-align: center;
+				font-size: 14px;
+				display: inline-block;
+				height: 40px;
+				width: 40px;
+				border-radius: 100%;
+				line-height: 40px;
+				border: 1px solid $darkgrey;
+				font-weight: bold;
+				background-color: white;
+				transition: all .3s;
+				&:not(:last-child) {
+					margin: 0 5% 0 0;
+				}
+			}
+			input[type="submit"] {
+				cursor: pointer;
+				width: 220px;
+				display: block;
+				margin-top: 30px;
+				font-size: 18px;
+				letter-spacing: .05em;
+				border: none;
+				border-radius: 55px;
+				font-weight: bold;
+				outline: none;
+				padding: 13px 0 10px;
+				background-color: $bluish-green;
+			}
+		}
+	}
+}

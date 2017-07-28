@@ -1,0 +1,50 @@
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/Fontawesome.eot?#iefix') format('embedded-opentype');
+	src: local('FontAwesome'),
+	url('../fonts/Fontawesome.woff') format('woff'),
+	url('../fonts/Fontawesome.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+// colors
+$darkgrey: #282828;
+$lightgrey: #686b74;
+$pink: #ce2c52;
+$blue: #2c87ce;
+$bluish-green: #8ae6cf;
+$background: #f6f6f6;
+
+@mixin clearfix {
+	clear: both;
+	overflow: hidden;
+}
+
+@mixin title {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+body {
+	font-family: 'Open Sans', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	background-color: $background;
+	max-width: 835px;
+	margin: 0 auto;
+	padding: 30px 40px 0;
+	color: $darkgrey;
+}
+
+h1 {
+	font-family: 'Oswald', Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 0 0 30px;
+	text-transform: uppercase;
+	line-height: 1.5;
+	letter-spacing: .05em;
+}
